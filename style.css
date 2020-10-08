@@ -1,0 +1,106 @@
+
+
+header{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+#refreshPage{
+    font-size: 30px;
+    color: #FFED66;
+    font-weight: bold;
+    background-color: #FF5E5B;
+ 
+    font-family: 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#solveSudoku{
+    font-size: 30px;
+    color: dodgerblue;
+    font-weight: bold;
+    background-color: cornsilk;
+ 
+    font-family: 'Times New Roman', Times, serif, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#solveSudoku:hover{
+    font-size: 35px;
+    cursor: pointer;
+}
+#refreshPage:hover{
+    font-size: 35px;
+    cursor: pointer;
+}
+h1{
+    font-size: 80px;
+    font-family: monospace;
+    text-shadow: 4px 4px cornflowerblue;
+    
+}
+h4{
+    font-size: 40px;
+    color: red;
+    font-family: cursive;
+    
+}
+
+#sudokuGame{
+    justify-content: center;
+    display: flex;
+
+
+}
+#gameTable{
+    display: flex;
+    justify-content: center;
+
+}
+
+#sudokuTable
+{
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 400;
+    height: 400px;
+}
+.bx1,.bx3,.bx5,.bx7,.bx9{
+    background-color: #4da6ff;
+}
+.bx2,.bx4,.bx6,.bx8
+{
+    background-color: #ffff6a;
+}
+
+.box{
+    border: 2px solid black;
+    box-shadow: 1px 1px cornflowerblue;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    margin: 0px;
+    vertical-align: middle;
+    font-size: 35px;
+
+}
+
+.inputC{
+
+    text-align: center;
+    border: none;
+    font-size: 35px;
+    width: 100%; 
+    height: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px white;
+
+}
+
+
+
+

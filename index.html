@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Sudoku</title>
+</head>
+
+<header>
+    <h1>Sudoku</h1>
+    <h4 id="count">Mistakes : 0</h4>
+
+
+
+</header>
+
+<body>
+    <div id="sudokuGame">
+        <div id="sudokuTable">
+            <table id="table">
+                <tbody>
+                    <tr>
+                        <td class="box" id="r0c0"><input type="text" maxlength="1" class="inputC bx1"> </td>
+                        <td class="box" id="r0c1"><input type="text" maxlength="1" class="inputC bx1"> </td>
+                        <td class="box" id="r0c2"><input type="text" maxlength="1" class="inputC bx1"> </td>
+                        <td class="box" id="r0c3"><input type="text" maxlength="1" class="inputC bx2"> </td>
+                        <td class="box" id="r0c4"><input type="text" maxlength="1" class="inputC bx2"> </td>
+                        <td class="box" id="r0c5"><input type="text" maxlength="1" class="inputC bx2"> </td>
+                        <td class="box" id="r0c6"><input type="text" maxlength="1" class="inputC bx3"> </td>
+                        <td class="box" id="r0c7"><input type="text" maxlength="1" class="inputC bx3"> </td>
+                        <td class="box" id="r0c8"><input type="text" maxlength="1" class="inputC bx3"> </td>
+                    </tr>
+                    <tr>
+                        <td class="box" id="r1c0"><input type="text" maxlength="1" class="inputC bx1"> </td>
+                        <td class="box" id="r1c1"><input type="text" maxlength="1" class="inputC bx1"> </td>
+                        <td class="box" id="r1c2"><input type="text" maxlength="1" class="inputC bx1"> </td>
+                        <td class="box" id="r1c3"><input type="text" maxlength="1" class="inputC bx2"> </td>
+                        <td class="box" id="r1c4"><input type="text" maxlength="1" class="inputC bx2"> </td>
+                        <td class="box" id="r1c5"><input type="text" maxlength="1" class="inputC bx2"> </td>
+                        <td class="box" id="r1c6"><input type="text" maxlength="1" class="inputC bx3"> </td>
+                        <td class="box" id="r1c7"><input type="text" maxlength="1" class="inputC bx3"> </td>
+                        <td class="box" id="r1c8"><input type="text" maxlength="1" class="inputC bx3"> </td>
+                    </tr>
+                    <tr>
+                        <td class="box" id="r2c0"><input type="text" maxlength="1" class="inputC bx1"> </td>
+                        <td class="box" id="r2c1"><input type="text" maxlength="1" class="inputC bx1"> </td>
+                        <td class="box" id="r2c2"><input type="text" maxlength="1" class="inputC bx1"> </td>
+                        <td class="box" id="r2c3"><input type="text" maxlength="1" class="inputC bx2"> </td>
+                        <td class="box" id="r2c4"><input type="text" maxlength="1" class="inputC bx2"> </td>
+                        <td class="box" id="r2c5"><input type="text" maxlength="1" class="inputC bx2"> </td>
+                        <td class="box" id="r2c6"><input type="text" maxlength="1" class="inputC bx3"> </td>
+                        <td class="box" id="r2c7"><input type="text" maxlength="1" class="inputC bx3"> </td>
+                        <td class="box" id="r2c8"><input type="text" maxlength="1" class="inputC bx3"> </td>
+                    </tr>
+                    <tr>
+                        <td class="box" id="r3c0"><input type="text" maxlength="1" class="inputC bx4"> </td>
+                        <td class="box" id="r3c1"><input type="text" maxlength="1" class="inputC bx4"> </td>
+                        <td class="box" id="r3c2"><input type="text" maxlength="1" class="inputC bx4"> </td>
+                        <td class="box" id="r3c3"><input type="text" maxlength="1" class="inputC bx5"> </td>
+                        <td class="box" id="r3c4"><input type="text" maxlength="1" class="inputC bx5"> </td>
+                        <td class="box" id="r3c5"><input type="text" maxlength="1" class="inputC bx5"> </td>
+                        <td class="box" id="r3c6"><input type="text" maxlength="1" class="inputC bx6"> </td>
+                        <td class="box" id="r3c7"><input type="text" maxlength="1" class="inputC bx6"> </td>
+                        <td class="box" id="r3c8"><input type="text" maxlength="1" class="inputC bx6"> </td>
+                    </tr>
+                    <tr>
+                        <td class="box" id="r4c0"><input type="text" maxlength="1" class="inputC bx4"> </td>
+                        <td class="box" id="r4c1"><input type="text" maxlength="1" class="inputC bx4"> </td>
+                        <td class="box" id="r4c2"><input type="text" maxlength="1" class="inputC bx4"> </td>
+                        <td class="box" id="r4c3"><input type="text" maxlength="1" class="inputC bx5"> </td>
+                        <td class="box" id="r4c4"><input type="text" maxlength="1" class="inputC bx5"> </td>
+                        <td class="box" id="r4c5"><input type="text" maxlength="1" class="inputC bx5"> </td>
+                        <td class="box" id="r4c6"><input type="text" maxlength="1" class="inputC bx6"> </td>
+                        <td class="box" id="r4c7"><input type="text" maxlength="1" class="inputC bx6"> </td>
+                        <td class="box" id="r4c8"><input type="text" maxlength="1" class="inputC bx6"> </td>
+                    </tr>
+                    <tr>
+                        <td class="box" id="r5c0"><input type="text" maxlength="1" class="inputC bx4"> </td>
+                        <td class="box" id="r5c1"><input type="text" maxlength="1" class="inputC bx4"> </td>
+                        <td class="box" id="r5c2"><input type="text" maxlength="1" class="inputC bx4"> </td>
+                        <td class="box" id="r5c3"><input type="text" maxlength="1" class="inputC bx5"> </td>
+                        <td class="box" id="r5c4"><input type="text" maxlength="1" class="inputC bx5"> </td>
+                        <td class="box" id="r5c5"><input type="text" maxlength="1" class="inputC bx5"> </td>
+                        <td class="box" id="r5c6"><input type="text" maxlength="1" class="inputC bx6"> </td>
+                        <td class="box" id="r5c7"><input type="text" maxlength="1" class="inputC bx6"> </td>
+                        <td class="box" id="r5c8"><input type="text" maxlength="1" class="inputC bx6"> </td>
+                    </tr>
+                    <tr>
+                        <td class="box" id="r6c0"><input type="text" maxlength="1" class="inputC bx7"> </td>
+                        <td class="box" id="r6c1"><input type="text" maxlength="1" class="inputC bx7"> </td>
+                        <td class="box" id="r6c2"><input type="text" maxlength="1" class="inputC bx7"> </td>
+                        <td class="box" id="r6c3"><input type="text" maxlength="1" class="inputC bx8"> </td>
+                        <td class="box" id="r6c4"><input type="text" maxlength="1" class="inputC bx8"> </td>
+                        <td class="box" id="r6c5"><input type="text" maxlength="1" class="inputC bx8"> </td>
+                        <td class="box" id="r6c6"><input type="text" maxlength="1" class="inputC bx9"> </td>
+                        <td class="box" id="r6c7"><input type="text" maxlength="1" class="inputC bx9"> </td>
+                        <td class="box" id="r6c8"><input type="text" maxlength="1" class="inputC bx9"> </td>
+                    </tr>
+                    <tr>
+                        <td class="box" id="r7c0"><input type="text" maxlength="1" class="inputC bx7"> </td>
+                        <td class="box" id="r7c1"><input type="text" maxlength="1" class="inputC bx7"> </td>
+                        <td class="box" id="r7c2"><input type="text" maxlength="1" class="inputC bx7"> </td>
+                        <td class="box" id="r7c3"><input type="text" maxlength="1" class="inputC bx8"> </td>
+                        <td class="box" id="r7c4"><input type="text" maxlength="1" class="inputC bx8"> </td>
+                        <td class="box" id="r7c5"><input type="text" maxlength="1" class="inputC bx8"> </td>
+                        <td class="box" id="r7c6"><input type="text" maxlength="1" class="inputC bx9"> </td>
+                        <td class="box" id="r7c7"><input type="text" maxlength="1" class="inputC bx9"> </td>
+                        <td class="box" id="r7c8"><input type="text" maxlength="1" class="inputC bx9"> </td>
+                    </tr>
+                    <tr>
+                        <td class="box" id="r8c0"><input type="text" maxlength="1" class="inputC bx7"> </td>
+                        <td class="box" id="r8c1"><input type="text" maxlength="1" class="inputC bx7"> </td>
+                        <td class="box" id="r8c2"><input type="text" maxlength="1" class="inputC bx7"> </td>
+                        <td class="box" id="r8c3"><input type="text" maxlength="1" class="inputC bx8"> </td>
+                        <td class="box" id="r8c4"><input type="text" maxlength="1" class="inputC bx8"> </td>
+                        <td class="box" id="r8c5"><input type="text" maxlength="1" class="inputC bx8"> </td>
+                        <td class="box" id="r8c6"><input type="text" maxlength="1" class="inputC bx9"> </td>
+                        <td class="box" id="r8c7"><input type="text" maxlength="1" class="inputC bx9"> </td>
+                        <td class="box" id="r8c8"><input type="text" maxlength="1" class="inputC bx9"> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+<audio id="newStart" src="sounds/start.mp3" preload="auto"></audio>
+<audio id="false" src="sounds/false.mp3" preload="auto"></audio>
+<audio id="win" src="sounds/win.mp3" preload="auto"></audio>
+
+<footer>
+    <br><br><br><br>
+    <button id="refreshPage" type="submit" onclick="refreshPage() ">Refresh the Page</button>
+    <br><br>
+    <button id="solveSudoku" type="submit" onclick="solveTheSudoku() ">Solve the Sudoku for Me</button>
+
+
+</footer>
+
+</html>
